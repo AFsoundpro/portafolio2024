@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <script src="js/scripts.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Portfolio</title>
+</head>
+
+<body class="dark">
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
+        <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+      </div>
+    </div>
+    <div id="toggle-colors" class="colors">
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(150, 84%,56%)" class="colors__item colors__item--green"></div>
+      <div data-color="hsl(276, 84%,56%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(46, 84%,56%)" class="colors__item colors__item--orange"></div>
+    </div>
+  </header>
+  <h1 class="tittle">HELLO WORLD</h1>
+  <main class="main">
+    <section class="column column--left">
+      <!--PROFILE CARD-->
+      <article class="card card--profile">
+        <div class="card__image-container">
+          <img src="/assets/images/afsprofile.jpeg" alt="">
+          <div class="card__header">
+            <h2 class="card__title">ANDRES FELIPE SANCHEZ PINILLA</h2>
+            <p class="card__subtitle">Full Stack Web Developer</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:pikison0492@gmail.com">
+                pikison0492@gmail.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel: +57 (301) 397-35-92">
+                +57 (301) 397-35-92"
+              </a>
+            </div>
+            <p class="card__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam dolorum deleniti accusantium unde non eligendi, quaerat corporis nesciunt hic eveniet at placeat earum. Officiis dolorum sit natus nihil, obcaecati optio, assumenda ipsum excepturi consectetur enim ad maiores dolore deleniti quasi nisi quod, corporis saepe soluta dolorem sapiente incidunt aut.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
